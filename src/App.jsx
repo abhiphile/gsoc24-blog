@@ -6,7 +6,6 @@ import { Divider, Typography } from 'antd';
 const { Title, Paragraph, Text } = Typography;
 import { Timeline } from "antd";
 
-
 const App = () => {
   const items = [
     {
