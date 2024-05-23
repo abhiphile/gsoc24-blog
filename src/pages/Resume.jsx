@@ -1,13 +1,24 @@
 import React from 'react'
 import Navbar from '../Navbar'
+import Anchors from '../assets/Anchors'
+import { Divider, Typography } from 'antd';
+const { Title, Paragraph, Text, Link } = Typography;
 
 const Resume = () => {
   return (
     <>
-    <Navbar/>
-    <div className='m-3 p-3'>
-      This is resume
-    </div>
+      {/* <Navbar /> */}
+      <div className="row">
+        <div className="col-md-2 col-xs-12">
+          <Anchors />
+        </div>
+        <div className="col m-2">
+          <div className="m-2 border rounded p-2">
+
+          </div>
+        </div>
+      </div>
+
     </>
   )
 }
