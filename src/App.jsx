@@ -50,8 +50,10 @@ const App = () => {
       children: (
         <>
           <h3 className="text-primary">Phase 4</h3>
-          <p>dd</p>
-          <p>dd</p>
+          <p>This step will primarily refactor older control plots to use symbolic methods rather than numerical ones. Control system plots like Pole Zero, Step Response, Impulse Response, Ramp Response, Bode Magnitude, and Bode Phase use numerical methods to plot the output.
+          </p>
+          <p>Add newer plots in the control_plots file, such as Root Locus, Nichols, and Nyquist plots.
+          </p>
         </>),
       color: 'blue'
     },
@@ -74,28 +76,33 @@ const App = () => {
         <div className="my-3 border rounded p-5">
           <Typography>
             <Title>
-              Welcome to my Blog on Journey with GSoC 2024.
+              Welcome to My Journey with GSoC 2024!
             </Title>
             <Divider />
             <Paragraph className='par'>
-              I'm thrilled to announce that my project on Improving and Extending the functionalities of the Control Module have been selected for Google Summer of Code 2024 with SymPy.
+              Hello, dear readers!
               <br />
-              This blog will provide a detailed account of my journey with GSoC 2024. I will be sharing my experiences, learnings, and the progress of my project.
+              I'm beyond excited to share some incredible news with you all my project on "Improving and Extending the Functionalities of the Control Module" has been selected for Google Summer of Code 2024, and I’ll be working with the SymPy repository.
+              This blog will be your front-row seat to my GSoC adventure. From the highs to the challenges, I’ll be documenting every step of this thrilling journey. You'll get an insider’s view of my experiences, the lessons I learn, and the progress I make on my project.
               <br />
-              You can find the official announcement and the list of selected students <a href='https://summerofcode.withgoogle.com/programs/2024/organizations/sympy' target='_blank'>here.</a>
+              Expect to find regular updates and detailed insights. Whether you’re a fellow GSoC participant, a programming enthusiast, or just curious about what GSoC entails, there’s something here for you.
+              Feel free to check out the official announcement and the complete list of selected students <a href="https://summerofcode.withgoogle.com/programs/2024/organizations/sympy">here.</a>
+              <br />
+              Stay tuned, and let’s make this journey unforgettable!
+              <br />
+              <p className="font-weight-bold">Abhishek Kumar</p>
               <Divider />
               <Title level={2}>Project Details</Title>
             </Paragraph>
           </Typography>
           <Timeline items={items} />
           <Typography>
-          <Paragraph>More details on the project can be found on my proposal for this project <a href="https://docs.google.com/document/d/1dmm7goYEyVcVkXrpwJm84yp6BmwfKrLB9rntZDA7R8g/edit?usp=sharing">here.</a></Paragraph>
+            <Paragraph>More details on the project can be found on my proposal for this project <a href="https://docs.google.com/document/d/1dmm7goYEyVcVkXrpwJm84yp6BmwfKrLB9rntZDA7R8g/edit?usp=sharing">here.</a></Paragraph>
           </Typography>
-          <hr />          
+          <hr />
         </div>
       </div>
     </div>
-
   </>;
 };
 
