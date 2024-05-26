@@ -13,7 +13,7 @@ const AboutMe = () => {
           <Anchors />
         </div>
         <div className="col m-2">
-          <div className="m-2 border rounded p-2">
+          <div className="m-2 border rounded p-4">
             <Typography>
               <Title>
                 This is the title !

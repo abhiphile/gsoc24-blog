@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import Anchors from '../assets/Anchors'
 import { Divider, Typography } from 'antd';
+import Footer from '../assets/Footer';
 const { Title, Paragraph, Text, Link } = Typography;
 
 const Week2 = () => {
@@ -13,10 +14,10 @@ const Week2 = () => {
           <Anchors />
         </div>
         <div className="col m-2">
-          <div className="m-2 border rounded p-2">
+          <div className="m-2 border rounded p-4">
             <Typography>
               <Title>
-                This is the title !
+                Week 2
               </Title>
               <Paragraph className='par'>
                 This is par
@@ -24,6 +25,7 @@ const Week2 = () => {
             </Typography>
           </div>
         </div>
+        <Footer />
       </div>
 
     </>

@@ -1,10 +1,11 @@
 // App.js
-import React, { Children } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
 import Anchors from './assets/Anchors';
 import { Divider, Typography } from 'antd';
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 import { Timeline } from "antd";
+import Footer from './assets/Footer';
 
 const App = () => {
   const items = [
@@ -72,7 +73,7 @@ const App = () => {
         <Anchors />
       </div>
       <div className="col m-2">
-        <div className="my-3 border rounded p-5">
+        <div className="my-3 border rounded p-5" id='page-content'>
           <Typography>
             <Title>
               Welcome to My Journey with GSoC 2024!
@@ -101,6 +102,7 @@ const App = () => {
           <hr />
         </div>
       </div>
+      <Footer/>
     </div>
   </>;
 };

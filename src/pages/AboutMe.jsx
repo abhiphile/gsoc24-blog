@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import Anchors from '../assets/Anchors'
 import { Divider, Typography, Image } from 'antd';
+import Footer from '../assets/Footer';
 const { Title, Paragraph, Text, Link } = Typography;
 
 const AboutMe = () => {
@@ -13,7 +14,7 @@ const AboutMe = () => {
           <Anchors />
         </div>
         <div className="col m-2">
-          <div className="m-2 border rounded p-2">
+          <div className="m-2 border rounded p-4">
             <Typography>
               <Title>
                 About Me
@@ -67,6 +68,7 @@ const AboutMe = () => {
             </Typography>
           </div>
         </div>
+        <Footer/>
       </div>
 
     </>

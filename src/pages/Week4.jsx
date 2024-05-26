@@ -24,6 +24,7 @@ const Week4 = () => {
             </Typography>
           </div>
         </div>
+        <Footer/>
       </div>
 
     </>
