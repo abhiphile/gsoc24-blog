@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light align-items-center">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/gsoc24-blog/">
             <div className="row align-items-center">
               <img
                 width={50}
@@ -27,10 +27,10 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link className="nav-link" aria-current="page" to="/">Home</Link>
-              <Link className="nav-link" to="/about">About Me</Link>
-              <Link className="nav-link" to="/contact">Contact</Link>
-              <Link className="nav-link" to="/resume">Resume</Link>
+              <Link className="nav-link" aria-current="page" to="/gsoc24-blog">Home</Link>
+              <Link className="nav-link" to="/gsoc24-blog/about">About Me</Link>
+              <Link className="nav-link" to="/gsoc24-blog/contact">Contact</Link>
+              <Link className="nav-link" to="/gsoc24-blog/resume">Resume</Link>
             </div>
           </div>
         </div>

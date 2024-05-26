@@ -18,17 +18,17 @@ const Anchors = () => {
             },
             {
               key: '2',
-              href: '/phase1',
+              href: '/gsoc24-blog/phase1',
               title: 'Phase 1',
               children: [
                 {
                   key: '3',
-                  href: '/week1',
+                  href: '/gsoc24-blog/week1',
                   title: 'Week 1'
                 },
                 {
                   key: '4',
-                  href: '/week2',
+                  href: '/gsoc24-blog/week2',
                   title: 'Week 2'
                 },
               
