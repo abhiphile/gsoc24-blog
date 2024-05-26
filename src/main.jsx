@@ -34,83 +34,83 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path : "/contact",
-    element : <Contact />
+    path: "/contact",
+    element: <Contact />
   },
   {
-    path : "/resume",
-    element : <Resume />
+    path: "/resume",
+    element: <Resume />
   },
   {
-    path : "/about",
-    element : <AboutMe/>
+    path: "/about",
+    element: <AboutMe />
   },
   {
-    path : "phase1",
-    element : <Phase1/>
+    path: "phase1",
+    element: <Phase1 />
   },
   {
-    path : "/phase2",
-    element : <Phase2/>
+    path: "/phase2",
+    element: <Phase2 />
   },
   {
-    path : "/phase3",
-    element : <Phase3/>
+    path: "/phase3",
+    element: <Phase3 />
   },
   {
-    path : "/phase4",
-    element : <Phase4/>
+    path: "/phase4",
+    element: <Phase4 />
   },
   {
-    path : "/week1",
-    element : <Week1/>
+    path: "/week1",
+    element: <Week1 />
   },
   {
-    path : "/week2",
-    element : <Week2/>
+    path: "/week2",
+    element: <Week2 />
   },
   {
-    path : "/week3",
-    element : <Week3/>
+    path: "/week3",
+    element: <Week3 />
   },
   {
-    path : "/week4",
-    element : <Week4/>
+    path: "/week4",
+    element: <Week4 />
   },
   {
-    path : "/week5",
-    element : <Week5/>
+    path: "/week5",
+    element: <Week5 />
   },
   {
-    path : "/week6",
-    element : <Week6/>
+    path: "/week6",
+    element: <Week6 />
   },
   {
-    path : "/week7",
-    element : <Week7/>
+    path: "/week7",
+    element: <Week7 />
   },
   {
-    path : "/week8",
-    element : <Week8/>
+    path: "/week8",
+    element: <Week8 />
   },
   {
-    path : "/week9",
-    element : <Week9/>
+    path: "/week9",
+    element: <Week9 />
   },
   {
-    path : "/week10",
-    element : <Week10/>
+    path: "/week10",
+    element: <Week10 />
   },
   {
-    path : "/week11",
-    element : <Week11/>
+    path: "/week11",
+    element: <Week11 />
   },
   {
-    path : "/week12",
-    element : <Week12/>
+    path: "/week12",
+    element: <Week12 />
   }
 ]);
-  
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
