@@ -30,83 +30,83 @@ import Phase4 from './pages/Phase4.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/gsoc24-blog/",
     element: <App />
   },
   {
-    path: "/contact",
+    path: "/gsoc24-blog/contact",
     element: <Contact />
   },
   {
-    path: "/resume",
+    path: "/gsoc24-blog/resume",
     element: <Resume />
   },
   {
-    path: "/about",
+    path: "/gsoc24-blog/about",
     element: <AboutMe />
   },
   {
-    path: "phase1",
+    path: "/gsoc24-blog/phase1",
     element: <Phase1 />
   },
   {
-    path: "/phase2",
+    path: "/gsoc24-blog/phase2",
     element: <Phase2 />
   },
   {
-    path: "/phase3",
+    path: "/gsoc24-blog/phase3",
     element: <Phase3 />
   },
   {
-    path: "/phase4",
+    path: "/gsoc24-blog/phase4",
     element: <Phase4 />
   },
   {
-    path: "/week1",
+    path: "/gsoc24-blog/week1",
     element: <Week1 />
   },
   {
-    path: "/week2",
+    path: "/gsoc24-blog/week2",
     element: <Week2 />
   },
   {
-    path: "/week3",
+    path: "/gsoc24-blog/week3",
     element: <Week3 />
   },
   {
-    path: "/week4",
+    path: "/gsoc24-blog/week4",
     element: <Week4 />
   },
   {
-    path: "/week5",
+    path: "/gsoc24-blog/week5",
     element: <Week5 />
   },
   {
-    path: "/week6",
+    path: "/gsoc24-blog/week6",
     element: <Week6 />
   },
   {
-    path: "/week7",
+    path: "/gsoc24-blog/week7",
     element: <Week7 />
   },
   {
-    path: "/week8",
+    path: "/gsoc24-blog/week8",
     element: <Week8 />
   },
   {
-    path: "/week9",
+    path: "/gsoc24-blog/week9",
     element: <Week9 />
   },
   {
-    path: "/week10",
+    path: "/gsoc24-blog/week10",
     element: <Week10 />
   },
   {
-    path: "/week11",
+    path: "/gsoc24-blog/week11",
     element: <Week11 />
   },
   {
-    path: "/week12",
+    path: "/gsoc24-blog/week12",
     element: <Week12 />
   }
 ]);
