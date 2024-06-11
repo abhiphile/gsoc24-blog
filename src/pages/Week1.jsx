@@ -36,9 +36,15 @@ const Week1 = () => {
                 <br />
                 <ol>
                   <li>
-                    <a href='https://github.com/sympy/sympy/pull/26647' className='text-success'><FaCodePullRequest /> ( Unmerged ) Refactored the Series and MIMOSeries to support StateSpace connection.</a>
+                    <a href='https://github.com/sympy/sympy/pull/26647' className='text-success'><FaCodePullRequest /> ( Merged ) Refactored the Series and MIMOSeries to support StateSpace connection.</a>
                   </li>
                 </ol>
+                <div className='gap-3'>
+                  <Divider />
+                </div>
+                Abhishek Kumar
+                <br />
+                GSoC Contributor
               </Paragraph>
             </Typography>
           </div>

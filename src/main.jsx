@@ -58,11 +58,11 @@ const router = createBrowserRouter([
     element: <Phase3 />
   },
   {
-    path: "/gsoc24-blog/phase4",
+    path: "gsoc24-blog/phase4",
     element: <Phase4 />
   },
   {
-    path: "/gsoc24-blog/week1",
+    path: "gsoc24-blog/week1",
     element: <Week1 />
   },
   {

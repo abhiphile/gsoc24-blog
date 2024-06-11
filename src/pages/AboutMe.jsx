@@ -68,7 +68,7 @@ const AboutMe = () => {
             </Typography>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
 
     </>
