@@ -43,7 +43,7 @@ const Week2 = () => {
                 Pull Requests
               </Title>
               <Paragraph className='par'>
-                <a href='https://github.com/sympy/sympy/pull/26685' className='text-success'><FaCodePullRequest /> ( Unmerged ) Added methods to StateSpace class to calculate state and output vectors.</a>
+                <a href='https://github.com/sympy/sympy/pull/26685' className='text-success'><FaCodePullRequest /> ( Merged ) Added methods to StateSpace class to calculate state and output vectors.</a>
                 <div className='gap-3'>
                 <Divider/>
                 </div>
