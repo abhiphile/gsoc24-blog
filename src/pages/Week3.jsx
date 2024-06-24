@@ -51,23 +51,6 @@ const Week3 = () => {
                 </ol>
               </Paragraph>
               <Title>
-                Resources Used
-              </Title>
-              <Paragraph className='par'>
-                To ensure the accuracy and robustness of the new methods introduced in the <code>StateSpace</code> class, I utilized various educational resources for testing and validation:
-                <ol>
-                  <li><strong>Doctest Examples:</strong></li>
-                  <ul>
-                    <li>Referenced examples from <a href="https://web.mit.edu/2.14/www/Handouts/StateSpaceResponse.pdf">MIT's State Space Response Handout</a> to verify the correctness of state and output vectors.</li>
-                  </ul>
-                  <li><strong>Unit Tests:</strong></li>
-                  <ul>
-                    <li>Used resources from <a href="https://lpsa.swarthmore.edu/Transient/TransMethSS.html">Swarthmore College's Transient Response Methods</a> for Test 1, ensuring accurate transient response behavior.</li>
-                    <li>Verified functionality with Example 11 from <a href="https://web.mit.edu/2.14/www/Handouts/StateSpaceResponse.pdf">MIT's State Space Response Handout</a> for Test 2, confirming the integration's effectiveness.</li>
-                  </ul>
-                </ol>
-              </Paragraph>
-              <Title>
                 Pull Requests
               </Title>
               <Paragraph className='par'>
