@@ -26,7 +26,7 @@ const Anchors = () => {
           Phase 2
         </div>
         <div className="ms-3">
-          <Link to="#link-props" className="nav-link text-dark my-1">
+          <Link to="/gsoc24-blog/week4" className="nav-link text-primary my-1">
             Week 4
           </Link>
         </div>

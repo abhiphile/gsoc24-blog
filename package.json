@@ -13,9 +13,11 @@
   "dependencies": {
     "@ant-design/icons": "^5.3.7",
     "antd": "^5.17.0",
+    "katex": "^0.16.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
+    "react-katex": "^3.0.1",
     "react-router-dom": "^6.23.0"
   },
   "devDependencies": {
