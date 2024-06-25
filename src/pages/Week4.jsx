@@ -77,7 +77,7 @@ const Week4 = () => {
                 Pull Requests
               </Title>
               <Paragraph className='par'>
-                <a href='https://github.com/sympy/sympy/pull/26736' className='text-success'><FaCodePullRequest /> (Open) Changed the output_vector to dsolve and added support of symbolic matrices..</a>
+                <a href='https://github.com/sympy/sympy/pull/26736' className='text-success'><FaCodePullRequest /> (Open) Changed the output_vector to dsolve and added support of symbolic matrices.</a>
                 <div className='gap-3'>
                   <Divider />
                 </div>
