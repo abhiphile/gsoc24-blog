@@ -6,7 +6,7 @@ import Footer from '../assets/Footer';
 import { FaCodePullRequest } from 'react-icons/fa6';
 const { Title, Paragraph } = Typography;
 
-const Week5 = () => {
+const Week6 = () => {
   return (
     <>
       <Navbar />
@@ -23,7 +23,18 @@ const Week5 = () => {
               <Paragraph className='par'>
                 During the fifth week of my Google Summer of Code (GSoC) journey, I introduced significant enhancements to the control module in SymPy. This week’s work included the addition of a new class for PID controllers and a method to compute the bandwidth of transfer functions.
                 <p>PID Controller:</p>
-                <Image></Image>
+                <div className="container overflow-hidden font-italic text-center align-items-center justify-content-center flex-column">
+
+                  <Image
+                    src='https://raw.githubusercontent.com/abhiphile/gsoc24-blog/main/src/assets/pictures/pid-controller.png'
+                    height={500}
+                    width={800}
+                    className='text-center flex-column d-flex justify-content-center'
+                  />
+                  <div className='font-italic text-center'>
+                    Fig - Diagram of PID Controller.
+                  </div>
+                </div>
                 <code>PIDController</code> is a class designed to facilitate the creation and manipulation of PID controllers, which are essential components in control systems. The parameters for the PID controller include:
                 <ul>
                   <li><code>kp</code>: Proportional gain (defaults to 0 if not provided).</li>
@@ -34,6 +45,7 @@ const Week5 = () => {
                 </ul>
                 <p>Bandwidth Calculation:</p>
                 A new method, <code>bandwidth</code>, has been added to the <code>TransferFunction</code> class. This method calculates the bandwidth of a given transfer function, providing a valuable tool for analyzing the frequency response of control systems.
+                This <code>bandwidth</code> method has several improvements over MATLAB in terms of accuracy and symbolic functionality.
               </Paragraph>
               <Title>
                 Implementation
@@ -80,4 +92,4 @@ const Week5 = () => {
   )
 }
 
-export default Week5
+export default Week6
