@@ -22,7 +22,7 @@ const Week4 = () => {
           <div className="m-2 border rounded p-4">
             <Typography>
               <Title>
-                Week 3 : Adding support of symbolic matrices to <code>dsolve()</code> in StateSpace.
+                Week 4 : Adding support of symbolic matrices to <code>dsolve()</code> in <code>StateSpace</code>.
               </Title>
               <Paragraph className='par'>
                 During the fourth week of my Google Summer of Code (GSOC) journey, In this week I worked on finding symbolic solutions of StateSpace equations.
@@ -77,7 +77,7 @@ const Week4 = () => {
                 Pull Requests
               </Title>
               <Paragraph className='par'>
-                <a href='https://github.com/sympy/sympy/pull/26736' className='text-success'><FaCodePullRequest /> (Open) Changed the output_vector to dsolve and added support of symbolic matrices.</a>
+                <a href='https://github.com/sympy/sympy/pull/26736' className='text-success'><FaCodePullRequest /> (Merged) Changed the output_vector to dsolve and added support of symbolic matrices.</a>
                 <div className='gap-3'>
                   <Divider />
                 </div>

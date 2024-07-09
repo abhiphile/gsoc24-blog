@@ -29,6 +29,9 @@ const Anchors = () => {
           <Link to="/gsoc24-blog/week4" className="nav-link text-primary my-1">
             Week 4
           </Link>
+          <Link to="/gsoc24-blog/week5" className="nav-link text-primary my-1">
+            Week 5
+          </Link>
         </div>
       </div>
     </div>

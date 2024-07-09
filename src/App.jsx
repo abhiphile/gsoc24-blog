@@ -21,7 +21,7 @@ const App = () => {
       children: (
         <>
           <h3 className='text-primary'>Phase 1</h3>
-          <p>Adding Series, Parallel and Feedback Interconnection between two StateSpace classes.</p>
+          <p>Adding <code>Series</code>, <code>Parallel</code> and <code>Feedback</code> Interconnection between two <code>StateSpace</code> classes.</p>
         </>),
       color: 'blue'
     },
@@ -30,8 +30,8 @@ const App = () => {
         <>
           <h3 className="text-primary">Phase 2</h3>
           <p>Adding a symbolic solver to find the solution of the state vector x by using ODE Module.</p>
-          <p>Adding a method to get6 the output vector of a given StateSpace object.</p>
-          <p>Adding problems related to StateSpace class.</p>
+          <p>Adding a method to get the output vector of a given <code>StateSpace</code> object.</p>
+          <p>Adding problems related to <code>StateSpace</code> class.</p>
         </>
       ),
       color: 'blue'
@@ -41,7 +41,7 @@ const App = () => {
         <>
           <h3 className="text-primary">Phase 3</h3>
           <p>Adding PID Controller to the control Module.</p>
-          <p>Implementing a bandwidth function for TransferFunction class.</p>
+          <p>Implementing a bandwidth function for <code>TransferFunction</code> class.</p>
         </>
       ),
       color: 'blue'
@@ -82,7 +82,7 @@ const App = () => {
             <Paragraph className='par'>
               Hello, dear readers!
               <br />
-              I'm beyond excited to share some incredible news with you all my project on "Improving and Extending the Functionalities of the Control Module" has been selected for Google Summer of Code 2024, and I’ll be working with the SymPy repository.
+              I'm beyond excited to share some incredible news with you all my project on <div className='text-decoration-underline text-decoration-strong'>"Improving and Extending the Functionalities of the Control Module"</div> has been selected for Google Summer of Code 2024, and I’ll be working with the SymPy repository.
               This blog will be your front-row seat to my GSoC adventure. From the highs to the challenges, I’ll be documenting every step of this thrilling journey. You'll get an insider’s view of my experiences, the lessons I learn, and the progress I make on my project.
               <br />
               Expect to find regular updates and detailed insights. Whether you’re a fellow GSoC participant, a programming enthusiast, or just curious about what GSoC entails, there’s something here for you.
