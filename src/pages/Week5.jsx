@@ -4,11 +4,9 @@ import Anchors from '../assets/Anchors'
 import { Divider, Typography } from 'antd';
 import Footer from '../assets/Footer';
 import { FaCodePullRequest } from 'react-icons/fa6';
-import 'katex/dist/katex.min.css';
-import { InlineMath, BlockMath } from 'react-katex';
 const { Title, Paragraph } = Typography;
 
-const Week4 = () => {
+const Week5 = () => {
   return (
     <>
       <Navbar />
@@ -32,19 +30,19 @@ const Week4 = () => {
                 <h2>Enhancing Test Coverage for State Space Methods</h2>
                 <p>The following <code>StateSpace</code> methods were tested using symbolic matrices:</p>
                 <ul>
-                    <li><code>num_inputs</code></li>
-                    <li><code>num_outputs</code></li>
-                    <li><code>num_states</code></li>
-                    <li><code>state_matrix</code></li>
-                    <li><code>output_matrix</code></li>
-                    <li><code>input_matrix</code></li>
-                    <li><code>feedforward_matrix</code></li>
-                    <li><code>observablity_matrix()</code></li>
-                    <li><code>observable_subspace()</code></li>
-                    <li><code>controllability_matrix()</code></li>
-                    <li><code>controllable_subspace()</code></li>
-                    <li><code>append()</code></li>
-                    <li><code>_eval_rewrite_as_TransferFunction()</code></li>
+                  <li><code>num_inputs</code></li>
+                  <li><code>num_outputs</code></li>
+                  <li><code>num_states</code></li>
+                  <li><code>state_matrix</code></li>
+                  <li><code>output_matrix</code></li>
+                  <li><code>input_matrix</code></li>
+                  <li><code>feedforward_matrix</code></li>
+                  <li><code>observablity_matrix()</code></li>
+                  <li><code>observable_subspace()</code></li>
+                  <li><code>controllability_matrix()</code></li>
+                  <li><code>controllable_subspace()</code></li>
+                  <li><code>append()</code></li>
+                  <li><code>_eval_rewrite_as_TransferFunction()</code></li>
                 </ul>
                 <p>These tests ensure that the <code>StateSpace</code> methods handle symbolic matrices accurately and efficiently, contributing to the robustness of the symbolic computation capabilities in SymPy.</p>
               </Paragraph>
@@ -70,4 +68,4 @@ const Week4 = () => {
   )
 }
 
-export default Week4
+export default Week5
