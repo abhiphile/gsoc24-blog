@@ -62,7 +62,7 @@ const router = createBrowserRouter([
     element: <Phase4 />
   },
   {
-    path: "gsoc24-blog/week1",
+    path: "/gsoc24-blog/week1",
     element: <Week1 />
   },
   {
