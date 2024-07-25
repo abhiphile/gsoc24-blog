@@ -1,8 +1,7 @@
-import React from 'react'
-import Navbar from '../Navbar'
-import Anchors from '../assets/Anchors'
-import { Divider, Typography } from 'antd';
-const { Title, Paragraph, Text, Link } = Typography;
+import Navbar from "../Navbar";
+import Anchors from "../assets/Anchors";
+import { Typography } from "antd";
+const { Title, Paragraph } = Typography;
 
 const WEeek10 = () => {
   return (
@@ -15,19 +14,14 @@ const WEeek10 = () => {
         <div className="col m-2">
           <div className="m-2 border rounded p-2">
             <Typography>
-              <Title>
-                This is the title !
-              </Title>
-              <Paragraph className='par'>
-                This is par
-              </Paragraph>
+              <Title>Week 10</Title>
+              <Paragraph className="par">Upcoming...</Paragraph>
             </Typography>
           </div>
         </div>
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default WEeek10
+export default WEeek10;
