@@ -111,7 +111,7 @@ const Week11 = () => {
                 </Title>
                 I've added two mechanics probems that can be modelled using StateSpace. The complete documentation for this can be found <a href="https://docs.sympy.org/dev/tutorials/physics/control/mechanics_problems.html">here.</a>
                 <Title level={3}>1. Spring Mass Damper System</Title>
-                <Image src={imgLink1}></Image>
+                <Image src={imgLink1}/>
                 <p>
                   A spring-mass-damping system can be modeled using a mass (m), a spring with a constant (k), and a damper with a damping coefficient (b). The spring force is proportional to the displacement of the mass, and the damping force is proportional to the velocity of the mass. Find the frequency response of the system.
                   To model this type of system we have used this.
@@ -120,7 +120,7 @@ const Week11 = () => {
                   </pre>
                 </p>
                 <Title level={3}>2. Rotational System</Title>
-                <Image src={imgLink2}></Image>
+                <Image src={imgLink2}/>
                 <p>
                   This problem explains how to model a rotaional system to state-space model. The system has input torque and damping effects. The system consists of two flywheels connected by a spring. We need to model the sytem by using StateSpace.
                   To model this we have used this.
@@ -132,14 +132,14 @@ const Week11 = () => {
                 <Title level={2}>Electrical Problem using StateSpace</Title>
                 Complete documentation for this can be found <a href="https://docs.sympy.org/dev/tutorials/physics/control/electrical_problems.html">here.</a>
                 <Title level={3}>1. Simple RLC Circuit</Title>
-                <Image src={imgLink3}></Image>
+                <Image src={imgLink3}/>
                 <p>
                   In a series RLC circuit, we have a resistor (R) , an inductor (L), and a capacitor (C) connected in series with an input voltage (Vin)
                   . The state variables are the current through the inductor (i(t)) and the voltage across the capacitor (Vc(t)). We need to model the system to StateSpace. To model this system we can use the following code.
                   <pre>{code3}</pre>
                 </p>
                 <Title level={3}>2. An Advanced problem.</Title>
-                <Image src={imgLink4}></Image>
+                <Image src={imgLink4}/>
                 <p>
                   Obtain the state model for a system represented by an electrical system as shown above. To model it using SymPy we can use the following code,
                   <pre>{code4}</pre>
