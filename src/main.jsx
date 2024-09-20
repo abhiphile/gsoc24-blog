@@ -18,7 +18,7 @@ import Week7 from "./pages/Week7.jsx";
 import Week9 from "./pages/Week9.jsx";
 import Week10 from "./pages/Week10.jsx";
 import Week11 from "./pages/Week11.jsx";
-import Week12 from "./pages/Week12.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -74,13 +74,9 @@ const router = createBrowserRouter([
     element: <Week10 />,
   },
   {
-    path: "/gsoc24-blog/week11",
+    path: "/gsoc24-blog/week11-12",
     element: <Week11 />,
-  },
-  {
-    path: "/gsoc24-blog/week12",
-    element: <Week12 />,
-  },
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
