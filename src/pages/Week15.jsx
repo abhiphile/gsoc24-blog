@@ -65,7 +65,7 @@ useEffect(() => {
               <Paragraph className="par">
                 Due to recent travel and commitments related to college placements, I was unable to
                 complete all the expected work within the given timeframe. After discussing this
-                with my mentor, he suggested that I request an extension. I also feel that an
+                with my mentor, he suggested to take an extension and I agreed that an
                 extension would allow me to complete the remaining work without added stress, so I
                 requested a 4-week extension.
                 <Divider/>
