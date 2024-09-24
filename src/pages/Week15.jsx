@@ -91,7 +91,7 @@ useEffect(() => {
                 <Title level={3}>Nichols plot Example</Title>
                 <div className="container overflow-hidden font-italic text-center align-items-center justify-content-center flex-column">
                   <Image
-                    src="https://github-production-user-asset-6210df.s3.amazonaws.com/140839576/367624983-e494972c-4dc6-4685-9a78-01cb157bd5ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240924%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240924T104752Z&X-Amz-Expires=300&X-Amz-Signature=d7d8ecda9c6c94cd76fcc6c3491e202e3ecca8859e8b57d5d87e9d72d90eee8e&X-Amz-SignedHeaders=host"
+                    src="https://i.ibb.co/fSBy7Tg/Screenshot-from-2024-09-24-16-44-45.png"
                     height={500}
                     width={550}
                     className="text-center flex-column d-flex justify-content-center"
@@ -103,7 +103,6 @@ useEffect(() => {
               <div className="border rounded p-3 m-2 text-md border-success">
               <ReactMarkdown children={readmeContent}/>
               </div>
-              
               <Title>Pull Requests</Title>
               <Paragraph className="par">
                 <a href="https://raw.githubusercontent.com/abhiphile/gsoc24-blog/refs/heads/main/public/nichols.png" className="text-success">
