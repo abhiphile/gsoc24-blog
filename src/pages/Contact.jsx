@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../Navbar'
-import Anchors from '../assets/Anchors'
+import React from 'react';
+import Navbar from '../Navbar';
+import Anchors from '../assets/Anchors';
 import Footer from '../assets/Footer';
 import { FaMapMarkerAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -14,7 +14,6 @@ const Contact = () => {
         </div>
         <div className="col m-2">
           <div className="m-2 border rounded p-4">
-
             <div className="row align-items-center">
               <div className="col">
                 <div className="container mt-5">
@@ -25,7 +24,10 @@ const Contact = () => {
                       <div className="d-flex align-items-center mb-5">
                         <FaMapMarkerAlt size={32} className="text-danger me-3" />
                         <div>
-                          <p>R48J+6V, National Institute of Technology Plot No. FA7,Zone, P1, GT Karnal Rd, Delhi, 110036</p>
+                          <p>
+                            R48J+6V, National Institute of Technology Plot No. FA7,Zone, P1, GT
+                            Karnal Rd, Delhi, 110036
+                          </p>
                           <a
                             href="https://www.google.com/maps/place/National+Institute+of+Technology+Delhi/@28.8139459,77.130541,17z/data=!4m10!1m2!2m1!1snit+dlehji!3m6!1s0x390d1b1923ada2e3:0x1169930518add2fe!8m2!3d28.8162558!4d77.1332341!15sCgluaXQgZGVsaGmSARdlZHVjYXRpb25hbF9pbnN0aXR1dGlvbuABAA!16s%2Fm%2F0l8gg7v?entry=ttu"
                             target="_blank"
@@ -38,8 +40,10 @@ const Contact = () => {
                       </div>
                       <div className="d-flex align-items-center mb-5">
                         <FaEnvelope size={32} className="me-3" />
-                        <div className='p-2'>
-                          <a href='mailto:abhishek.nitdelhi@gmail.com'className="mb-3">abhishek.nitdelhi@gmail.com</a>
+                        <div className="p-2">
+                          <a href="mailto:abhishek.nitdelhi@gmail.com" className="mb-3">
+                            abhishek.nitdelhi@gmail.com
+                          </a>
                         </div>
                       </div>
                       <div className="d-flex align-items-center mb-5">
@@ -80,19 +84,14 @@ const Contact = () => {
                   title="Google Maps"
                 ></iframe>
               </div>
-
-
             </div>
-
           </div>
         </div>
 
-
         <Footer />
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

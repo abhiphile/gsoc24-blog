@@ -1,13 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Anchors = () => {
   return (
-    <div
-      className="d-flex flex-column bg-light p-3 rounded-4 m-2"
-      style={styles.sidebar}
-    >
+    <div className="d-flex flex-column bg-light p-3 rounded-4 m-2" style={styles.sidebar}>
       <div>
         <div className="nav-link text-dark fw-bold my-2">Phase 1</div>
         <div className="ms-3">
@@ -67,16 +64,16 @@ const Anchors = () => {
 
 const styles = {
   sidebar: {
-    width: "100%",
-    maxWidth: "300px",
-    boxShadow: "2px 0 5px rgba(0,0,0,0.1)",
+    width: '100%',
+    maxWidth: '300px',
+    boxShadow: '2px 0 5px rgba(0,0,0,0.1)'
   },
   link: {
-    display: "block",
-    padding: "10px 15px",
-    borderRadius: "4px",
-    transition: "background-color 0.3s",
-  },
+    display: 'block',
+    padding: '10px 15px',
+    borderRadius: '4px',
+    transition: 'background-color 0.3s'
+  }
 };
 
 export default Anchors;

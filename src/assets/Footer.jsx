@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from 'react-icons/fa';
 const Footer = () => {
   return (
@@ -18,7 +18,10 @@ const Footer = () => {
             <a href="https://github.com/abhiphile" className="text-dark mx-3">
               <FaGithub size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/abhishek-kumar-nitdelhi/" className="text-dark mx-3">
+            <a
+              href="https://www.linkedin.com/in/abhishek-kumar-nitdelhi/"
+              className="text-dark mx-3"
+            >
               <FaLinkedin size={20} />
             </a>
           </div>
@@ -26,13 +29,14 @@ const Footer = () => {
 
         <div className="row justify-content-center mt-3">
           <div className="col text-center">
-
-            <p>Made with  <FaHeart className='text-danger' /></p>
+            <p>
+              Made with <FaHeart className="text-danger" />
+            </p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Footer;

@@ -1,14 +1,13 @@
-import React from "react";
-import Navbar from "../Navbar";
-import Anchors from "../assets/Anchors";
-import { Divider, Typography } from "antd";
-import { FaCodePullRequest } from "react-icons/fa6";
-import Footer from "../assets/Footer";
+import React from 'react';
+import Navbar from '../Navbar';
+import Anchors from '../assets/Anchors';
+import { Divider, Typography } from 'antd';
+import { FaCodePullRequest } from 'react-icons/fa6';
+import Footer from '../assets/Footer';
 const { Title, Paragraph, Text, Link } = Typography;
 
 const Week9 = () => {
-  const code1 =
-    `
+  const code1 = `
   if not sys2:
     sys2 = TransferFunction(1, 1, sys1.var)
 
@@ -22,7 +21,7 @@ const Week9 = () => {
     sys2.num_outputs == 1):
     raise ValueError("""To use Feedback connection for MIMO systems
     use MIMOFeedback instead.""")
-  `
+  `;
   const code2 = `
 if self.is_StateSpace_object:
   sys1_ss = self.sys1.doit().rewrite(StateSpace)
@@ -48,7 +47,7 @@ if self.is_StateSpace_object:
   C = Matrix.hstack(T1 * C1, self.sign * D1 * E_C2)
   D = D1 * T2
   return StateSpace(A, B, C, D)
-  `
+  `;
   const code3 = `
 A1 = np.array([[4, 1], [2, -3]])  
 B1 = np.array([[5, 2], [-3, -3]])  
@@ -85,7 +84,7 @@ C = [[  1.     -3.75   -1.75  -10.5    -9.   ]
 
 D = [[-0.25   2.75 ]
      [ 0.125  1.125]]
-`
+`;
   const code4 = `
     >>> A1 = Matrix([[4, 1], [2, -3]])
     >>> B1 = Matrix([[5, 2], [-3, -3]])
@@ -135,7 +134,7 @@ D = [[-0.25   2.75 ]
     [1/2, -13/8, -13/8, -19/4, -3]]), Matrix([
     [-1/4, 11/4],
     [ 1/8,  9/8]]))
-`
+`;
   return (
     <>
       <Navbar />
@@ -149,42 +148,59 @@ D = [[-0.25   2.75 ]
               <Title>
                 Week 9: Added Feedback interconnection for <code>StateSpace</code> model.
               </Title>
-              <Paragraph className='par'>
-                During the 9th week of my GSoc I've worked on Feedback interconnection of StateSpace class.
-                It was a difficult task as I need to closely moniter every step where the code was breaking.
+              <Paragraph className="par">
+                During the 9th week of my GSoc I've worked on Feedback interconnection of StateSpace
+                class. It was a difficult task as I need to closely moniter every step where the
+                code was breaking.
               </Paragraph>
-              <Title>
-                Implementation
-              </Title>
-              <Paragraph className='par'>
+              <Title>Implementation</Title>
+              <Paragraph className="par">
                 <h2>For SISO systems</h2>
                 <p>
-                  I've changed the parent class of Feedback which is for SISO from <code>TransferFunction</code> to <code>SISOLinearTimeInvariant.</code>
+                  I've changed the parent class of Feedback which is for SISO from{' '}
+                  <code>TransferFunction</code> to <code>SISOLinearTimeInvariant.</code>
                   It was done so that SISO <code>StateSpace</code> systems can be connected easily.
-                  I made some changes by adding a new property to all the interconnection type of objects which is <code>is_StateSpace_object</code>.
-                  This makes sure that the <code>StateSpace</code> objects is treated differently from the connection containing `s` or the Laplace Transform variable.
+                  I made some changes by adding a new property to all the interconnection type of
+                  objects which is <code>is_StateSpace_object</code>. This makes sure that the{' '}
+                  <code>StateSpace</code> objects is treated differently from the connection
+                  containing `s` or the Laplace Transform variable.
                 </p>
                 <p>
-                  Here I made sure that <code>doit()</code> should return the equivalent StateSpace model if the object is a <code>StateSpace</code> type.
+                  Here I made sure that <code>doit()</code> should return the equivalent StateSpace
+                  model if the object is a <code>StateSpace</code> type.
                 </p>
-                <h2>
-                  For MIMO Systems
-                </h2>
+                <h2>For MIMO Systems</h2>
                 <p>
-                  I've used proper type checking to make sure that the user gets correct message if the user tries to connect unsupported systems.
-                  <pre>
-                    {code1}
-                  </pre>
-                  For using <code>doit()</code> I've used a very complex logic which took me a lot of time to understand. I've referenced it from `python-control`
+                  I've used proper type checking to make sure that the user gets correct message if
+                  the user tries to connect unsupported systems.
+                  <pre>{code1}</pre>
+                  For using <code>doit()</code> I've used a very complex logic which took me a lot
+                  of time to understand. I've referenced it from `python-control`
                   <pre>{code2}</pre>
                   This code snippet follows the following steps :
                   <ul>
-                    <li>The algorithm first converts two systems (sys1 and sys2) into their StateSpace representations. These systems are defined by matrices <code>A, B, C and D</code>which describe the dynamics and outputs of the system.</li>
-                    <li>It then creates identity matrices and computes an intermediate matrix F, along with its inverse E. These matrices help manage interactions between the two systems. The algorithm uses these to calculate intermediate matrices that simplify combining the two systems.</li>
-                    <li>Finally, the algorithm calculates the new combined StateSpace representation by stacking and multiplying the matrices. This results in a new system that incorporates the dynamics of both original systems, effectively creating a new, combined StateSpace system.</li>
+                    <li>
+                      The algorithm first converts two systems (sys1 and sys2) into their StateSpace
+                      representations. These systems are defined by matrices{' '}
+                      <code>A, B, C and D</code>which describe the dynamics and outputs of the
+                      system.
+                    </li>
+                    <li>
+                      It then creates identity matrices and computes an intermediate matrix F, along
+                      with its inverse E. These matrices help manage interactions between the two
+                      systems. The algorithm uses these to calculate intermediate matrices that
+                      simplify combining the two systems.
+                    </li>
+                    <li>
+                      Finally, the algorithm calculates the new combined StateSpace representation
+                      by stacking and multiplying the matrices. This results in a new system that
+                      incorporates the dynamics of both original systems, effectively creating a
+                      new, combined StateSpace system.
+                    </li>
                   </ul>
                   <h2>Testing</h2>
-                  For testing I've used python-control I've validated everything using it and made test cases for sympy using it. An example for it is
+                  For testing I've used python-control I've validated everything using it and made
+                  test cases for sympy using it. An example for it is
                   <h3>Python Control Test</h3>
                   <pre>{code3}</pre>
                   <h3>Sympy Code</h3>
@@ -192,17 +208,19 @@ D = [[-0.25   2.75 ]
                   <h2>Refrences</h2>
                   <ol>
                     <li>
-                        <a href="https://python-control.readthedocs.io/en/latest/generated/control.InterconnectedSystem.html#control.InterconnectedSystem.feedback">Python Control</a>
+                      <a href="https://python-control.readthedocs.io/en/latest/generated/control.InterconnectedSystem.html#control.InterconnectedSystem.feedback">
+                        Python Control
+                      </a>
                     </li>
                   </ol>
                 </p>
               </Paragraph>
-              <Title>
-                Pull Requests
-              </Title>
-              <Paragraph className='par'>
-                <a href='https://github.com/sympy/sympy/pull/26863' className='text-success'><FaCodePullRequest /> (Open) Added support of Feedback to work with StateSpace.</a>
-                <div className='gap-3'>
+              <Title>Pull Requests</Title>
+              <Paragraph className="par">
+                <a href="https://github.com/sympy/sympy/pull/26863" className="text-success">
+                  <FaCodePullRequest /> (Open) Added support of Feedback to work with StateSpace.
+                </a>
+                <div className="gap-3">
                   <Divider />
                 </div>
                 Abhishek Kumar
@@ -210,12 +228,11 @@ D = [[-0.25   2.75 ]
                 GSoC Contributor
               </Paragraph>
             </Typography>
-
           </div>
         </div>
         <Footer />
       </div>
     </>
-  )
-}
+  );
+};
 export default Week9;

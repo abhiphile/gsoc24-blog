@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../Navbar'
-import Anchors from '../assets/Anchors'
+import React from 'react';
+import Navbar from '../Navbar';
+import Anchors from '../assets/Anchors';
 import { Divider, Typography } from 'antd';
 const { Title, Paragraph, Text, Link } = Typography;
 
@@ -15,19 +15,14 @@ const AboutMe = () => {
         <div className="col m-2">
           <div className="m-2 border rounded p-4">
             <Typography>
-              <Title>
-                This is the title !
-              </Title>
-              <Paragraph className='par'>
-                This is par
-              </Paragraph>
+              <Title>This is the title !</Title>
+              <Paragraph className="par">This is par</Paragraph>
             </Typography>
           </div>
         </div>
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

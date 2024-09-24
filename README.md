@@ -11,32 +11,40 @@ Stay tuned, and let’s make this journey unforgettable!
 ## Project Details
 
 ### Community Building Period
+
 - Familiarize with the community and codebase.
 - Plan project milestones and timelines.
 
 ### Phase 1
+
 - Adding Series, Parallel, and Feedback Interconnection between two `StateSpace` classes.
 
 ### Phase 2
+
 - Adding a symbolic solver to find the solution of the state vector `x` using the ODE Module.
 - Adding a method to get the output vector of a given `StateSpace` object.
 - Adding problems related to the `StateSpace` class.
 
 ### Phase 3
+
 - Adding PID Controller to the control module.
 - Implementing a bandwidth function for `TransferFunction` class.
 
 ### Phase 4
+
 - Refactor older control plots to use symbolic methods rather than numerical ones.
   - Control system plots like Pole Zero, Step Response, Impulse Response, Ramp Response, Bode Magnitude, and Bode Phase.
 - Add newer plots in the control_plots file, such as Root Locus, Nichols, and Nyquist plots.
 
 ### End of GSoC Coding Period
+
 - Finalize and document the work done.
 - Ensure all contributions are merged into the main repository.
 
 ## Link to the blog
+
 This blog is made by using Vite and React. It is hosted on github pages with the following [link ](https://abhiphile.github.io/gsoc24-blog/).
 
 ## Proposal
+
 You can find more details about my project through my [Proposal ](https://docs.google.com/document/d/1dmm7goYEyVcVkXrpwJm84yp6BmwfKrLB9rntZDA7R8g/edit).
