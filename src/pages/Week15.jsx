@@ -91,7 +91,7 @@ useEffect(() => {
                 <Title level={3}>Nichols plot Example</Title>
                 <div className="container overflow-hidden font-italic text-center align-items-center justify-content-center flex-column">
                   <Image
-                    src="https://i.ibb.co/fSBy7Tg/Screenshot-from-2024-09-24-16-44-45.png"
+                    src="https://raw.githubusercontent.com/abhiphile/gsoc24-blog/main/src/assets/pictures/nichols.png"
                     height={500}
                     width={550}
                     className="text-center flex-column d-flex justify-content-center"
