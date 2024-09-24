@@ -106,7 +106,7 @@ useEffect(() => {
               
               <Title>Pull Requests</Title>
               <Paragraph className="par">
-                <a href="https://github.com/sympy/sympy/pull/27067" className="text-success">
+                <a href="/nichols.png" className="text-success">
                   <FaCodePullRequest /> (Open) Added nichols_plot to control plots.
                 </a>
                 <div className="gap-3">
