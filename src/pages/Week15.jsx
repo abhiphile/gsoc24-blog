@@ -67,7 +67,7 @@ useEffect(() => {
                 complete all the expected work within the given timeframe. After discussing this
                 with my mentor, he suggested that I request an extension. I also feel that an
                 extension would allow me to complete the remaining work without added stress, so I
-                would like to request a 4-week extension to ensure I can deliver quality results.
+                requested a 4-week extension.
                 <Divider/>
                 This week, I focused on developing a Python function to generate Nichols plot for
                 continuous-time Single-Input Single-Output (SISO) Linear Time-Invariant (LTI)
